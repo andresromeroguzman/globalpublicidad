@@ -11,11 +11,12 @@
   
   body {
     font-family: "Open Sans", sans-serif;
-    background-color: rgb(239 239 245);
+    /* background-color: rgb(239 239 245); */
   }
   .row {
     display: flex;
     flex-wrap: wrap;
+    --bs-gutter-x: 0;
   }
   
   header {
@@ -25,8 +26,6 @@
     z-index: 2;
   }
   nav {
-    display: flex;
-    justify-content: space-between;
     padding: 10px;
     background: #3ca55c; /* fallback for old browsers */
     background: -webkit-linear-gradient(
@@ -43,9 +42,7 @@
     align-items: center;
   }
   
-  nav ul {
-    display: flex;
-  }
+  
   nav li {
     padding-left: 20px;
     margin-right: 10px;
@@ -80,7 +77,7 @@
     margin: auto;
   }
   .info-text {
-    width: 50%;
+    width: auto%;
   }
   .info-text h2 {
     text-align: center;
@@ -110,7 +107,7 @@
     align-content: center;     
   }
   .products-content figure img {
-    width: 50px;
+    width: auto;
   }
   
   .products h2 {
@@ -126,13 +123,13 @@
   }
   .product-img {
     display: flex;
-    padding: 10px;
-    width: 40%;
+    padding: 10px;   
     align-items: center;
+    justify-content: center;
   }
   .product-info {
     padding: 10px;
-    width: 60%;
+    
   }
   .product-info h3 {
     text-align: center;
@@ -147,7 +144,7 @@
   }
   .product-img figure {
     display: flex;
-    width: 100%;
+    width: 50%;
     justify-content: center;
   }
   
@@ -186,9 +183,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .benefits-card {
-    width: 10%;
-  }
+ 
   .benefits-card figure {
     display: flex;
     justify-content: center;
@@ -234,6 +229,6 @@
     justify-content: space-between;
   }
   footer img {
-    margin-left: 40%;
+    align-items: center;
   }
   
