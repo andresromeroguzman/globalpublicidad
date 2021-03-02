@@ -1,20 +1,16 @@
 
-@media (min-width:576px){  
-      
+@media (min-width:576px){        
      nav ul {
           display: flex;
           justify-content: space-evenly;         
-     }
-          
+     }              
     
 }
 /* Tablets */
-@media (min-width:768px){
-        nav {
-             justify-content: space-between;
-        }
-            
-
+@media (min-width:768px){              
+        .logo p, .nav_options ul li {
+          margin-top: 12px;
+     }
 }
 
 /* Pc Portatiles */

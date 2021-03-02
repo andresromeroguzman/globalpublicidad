@@ -1,8 +1,3 @@
-/* .carousel-inner {
-    width: 100%;
-    height: 200px;
-} */
-
 * {
     margin: 0;
     padding: 0;
@@ -10,47 +5,49 @@
   }
   
   body {
-    font-family: "Open Sans", sans-serif;
-    /* background-color: rgb(239 239 245); */
+    font-family: "Open Sans", sans-serif;   
+  }
+  :root {
+    --josefin:'Josefin Sans', sans-serif; 
   }
   .row {
     display: flex;
     flex-wrap: wrap;
     --bs-gutter-x: 0;
-  }
-  
+  }  
   header {
     position: sticky;
     width: auto;
     top: 0;
     z-index: 2;
   }
+  .logo {
+    display: flex;
+    justify-content: center;  
+    font-family: var(--josefin);  
+  }
+  .nav-logo {
+    width: 220px;
+    height: auto;
+  }
   nav {
     padding: 10px;
-    background: #3ca55c; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #b5ac49,
-      #3ca55c
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #b5ac49,
-      #3ca55c
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+    background:#a0dd9f; 
     align-items: center;
-  }
-  
-  
+  } 
   nav li {
     padding-left: 20px;
     margin-right: 10px;
     list-style: none;
+    text-transform: uppercase;
+    font-family: var(--josefin);  
   }
+    
   nav li a {
     text-decoration: none;
-    color: black;
+    color: black; 
+    font-size: 16px; 
+
   }
   nav li a:hover {
     color: white;
@@ -63,36 +60,58 @@
     padding: 10px;
   }
   .info h1 {
-    text-align: center;
-    padding: 20px;
+    font-family: var(--josefin);
   }
-  .info-content {
+   .info-section {
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
+    padding: 10px;   
+    align-items: center;
+    justify-content: center;
+  }  
+ 
+  .content-img {
+    display: flex;
   }
-  
-  .info-section {
-    width: 50%;
-    margin: auto;
-  }
-  .info-text {
-    width: auto%;
-  }
+.img_content {
+  width: 70%;
+ margin: auto;
+}
   .info-text h2 {
-    text-align: center;
+    font-family: var(--josefin);
   }
   .info-text p {
     margin: 20px;
   }
-  .info-section .info-img img {
-    width: 100%;
+  .info-section figure {
+    display: flex;
+    justify-content: center;
   }
+  
   /* -------------------PRODUCTS -------------- */
   .products {
     padding: 10px;
     background-color: rgb(226, 202, 202);
     /* border: 1px solid; */
+  }
+  .product-content_card:hover {
+    background: rgb(230, 222, 238);
+  }
+ .product-content_card a {
+   text-decoration: none;
+   color: black;
+
+
+  }
+  .card-img {
+    justify-content: center;
+    width: 50%;
+    margin: 10px auto;
+
+  }
+  .img-icon {
+    width: 90px;
+    height: 95px;      
+    border-radius: 50%;
   }
   
   .products-content {
@@ -106,13 +125,14 @@
     justify-content: center;
     align-content: center;     
   }
+  .title-bold {
+    font-weight: bold;
+  }
   .products-content figure img {
     width: auto;
-  }
-  
-  .products h2 {
-    padding: 10px;
-    text-align: center;
+  }  
+  .products h2 {    
+    font-family: var(--josefin);
   }
   .product-1 {
     margin: 20px 0;
@@ -128,12 +148,15 @@
     justify-content: center;
   }
   .product-info {
-    padding: 10px;
-    
+    padding: 10px;    
+  }
+  
+  .title-bold :hover {
+    text-shadow: 4px 4px 2px rgba(194, 135, 135, 0.6);    
   }
   .product-info h3 {
-    text-align: center;
-    padding: 10px;
+     padding: 10px;
+     font-family: var(--josefin);
   }
   .product-1 img {
     width: 100%;
@@ -166,6 +189,7 @@
     margin: 20px;
     padding: 10px;
     text-align: center;
+    font-family: var(--josefin);
   }
   /* VENTAJAS */
   .benefits {
@@ -176,6 +200,7 @@
   .benefits h2 {
     text-align: center;
     padding: 10px;
+    font-family: var(--josefin);
   }
   .benefits-items {
     margin: 30px;
@@ -183,21 +208,28 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
- 
+  .benefits-card {
+    width: 120px;
+  }
+.benefits-card:hover {
+  background: rgb(230, 222, 238);
+}
   .benefits-card figure {
+    padding: 10px;
+    margin: auto;
     display: flex;
     justify-content: center;
   }
-  .benefits-card h4 {
+  .benefits-card p {
     font-size: 15px;
     text-align: center;
-  }
-  .benefits-card figure img {
-    width: 40px;
+  } 
+  .benefits-icon {
+    width: 50px;
   }
   
   /* BOTON WHATSAPP */
-  .boton-position {
+  .link-position {
     position: fixed;
     width: 60px;
     height: 60px;
@@ -222,6 +254,7 @@
   
   /* FOOTER */
   footer {
+    font-family: var(--josefin);
     background-color: #e0d1c6;
     /* border: 1px solid; */
     display: flex;
