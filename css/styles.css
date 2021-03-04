@@ -10,6 +10,16 @@
   :root {
     --josefin:'Josefin Sans', sans-serif; 
   }
+  .after::after {
+  content:'';
+  display: block;
+  margin:  auto;
+  margin-top: 10px;
+  width: 100px;
+  height: 3px;
+  background: black;
+  margin-bottom: 20px;
+}
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -100,21 +110,43 @@
    text-decoration: none;
    color: black;
 
-
   }
   .card-img {
     justify-content: center;
-    width: 50%;
-    margin: 10px auto;
-
-  }
-  .img-icon {
+    background:yellow;
     width: 90px;
     height: 95px;      
     border-radius: 50%;
+    margin: 10px auto;
+    background-position: center;
+    background-size: cover; 
+
   }
-  
-  .products-content {
+  .card-img_atrapamugre {   
+    background-image: url(/img/atrapamugre.PNG); 
+    
+  }
+  .card-img_desinfectante {
+    background-image: url(/img/tapete_desinfectante.PNG);
+
+  }
+  .card-img_publicitario {
+    background-image: url(/img/publicitario.PNG);
+
+  }
+  .card-img_luminosos {
+    background-image: url(/img/luminosos.PNG);
+
+  }
+  .card-img_tarjetas {
+    background-image: url(/img/tarjetas.PNG);
+
+  }
+  .card-img_mugs {
+    background-image: url(/img/mugs.PNG);
+
+  }
+   .products-content {
     display: flex;
     padding: 20px;
     justify-content: space-between;
