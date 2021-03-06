@@ -1,103 +1,103 @@
-
-@media (min-width:576px){        
-     nav ul {
-          display: flex;
-          justify-content: space-evenly;         
-     }    
-       
-    
+@media (min-width: 576px) {
+  nav ul {
+    display: flex;
+  }
 }
 /* Tablets */
-@media (min-width:768px){              
-        .logo p, .nav_options ul li {
-          margin-top: 12px;
-     }
-     .products h2::before {
-          content:'';
-          display: inline-block;
-          width: 150px;
-          height: 2px;
-          background: rgb(194, 169, 169);
-          margin-bottom: 10px;
-          margin-right: 15px;
-         }
-         .products h2::after {
-          content:'';
-          display: inline-block;
-          width: 150px;
-          height: 2px;
-          background: rgb(194, 169, 169);
-          margin-bottom: 10px;
-          margin-left: 15px;
-         }
-     .galery h3::before {
-          content:'';
-          display: inline-block;
-          width: 150px;
-          height: 2px;
-          background: rgb(194, 169, 169);
-          margin-bottom: 10px;
-          margin-right: 15px;
-        }
-        .galery h3::after {
-          content:'';
-          display: inline-block;
-          width: 150px;
-          height: 2px;
-          background: rgb(194, 169, 169);
-          margin-bottom: 10px;
-          margin-left: 15px;
-        }
-     .benefits h2::before {
-          content:'';
-          display: inline-block;
-          width: 60px;
-          height: 2px;
-          background: rgb(194, 169, 169);
-          margin-bottom: 10px;
-          margin-right: 10px;
-        }
-        .benefits h2::after {
-          content:'';
-          display: inline-block;
-          width: 60px;
-          height: 2px;
-          background: rgb(194, 169, 169);
-          margin-bottom: 10px;
-          margin-left: 10px;
-        }
+@media (min-width: 768px) {
+  .logo p,
+  .nav_options ul li {
+    margin-top: 12px;
+  }
+  .products h2::before {
+    content: "";
+    display: inline-block;
+    width: 150px;
+    height: 2px;
+    background: rgb(194, 169, 169);
+    margin-bottom: 10px;
+    margin-right: 15px;
+  }
+  .products h2::after {
+    content: "";
+    display: inline-block;
+    width: 150px;
+    height: 2px;
+    background: rgb(194, 169, 169);
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  .galery h3::before {
+    content: "";
+    display: inline-block;
+    width: 150px;
+    height: 2px;
+    background: rgb(194, 169, 169);
+    margin-bottom: 10px;
+    margin-right: 15px;
+  }
+  .galery h3::after {
+    content: "";
+    display: inline-block;
+    width: 150px;
+    height: 2px;
+    background: rgb(194, 169, 169);
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  .benefits h2::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background: rgb(194, 169, 169);
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .benefits h2::after {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background: rgb(194, 169, 169);
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .galery-content img {
+    width: 250px !important;
+  }
 }
-
 /* Pc Portatiles */
-@media (min-width:992px){
-     
-     .order-section{
-          order:2;          
-     }
-     .product-info{
-       order:1;
-     }
-     .benefits h2::before {
-          content:'';
-          display: inline-block;
-          width: 100px;
-          height: 2px;
-          background: rgb(194, 169, 169);
-          margin-bottom: 10px;
-          margin-right: 10px;
-        }
-        .benefits h2::after {
-          content:'';
-          display: inline-block;
-          width: 100px;
-          height: 2px;
-          background: rgb(194, 169, 169);
-          margin-bottom: 10px;
-          margin-left: 10px;
-        }
-} 
-
+@media (min-width: 992px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .order-section {
+    order: 2;
+  }
+  .product-info {
+    order: 1;
+  }
+  .benefits h2::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background: rgb(194, 169, 169);
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .benefits h2::after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background: rgb(194, 169, 169);
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+}
 /* Pc Grandes */
-@media (min-width:1200px){
-     
+@media (min-width: 1200px) {
 }

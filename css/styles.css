@@ -1,303 +1,292 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Open Sans", sans-serif;   
-  }
-  :root {
-    --josefin:'Josefin Sans', sans-serif; 
-  }
-  .after::after {
-  content:'';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --josefin: "Josefin Sans", sans-serif;
+  --titles: 28px;
+  --subtitles: 20px;  
+}
+.after::after {
+  content: "";
   display: block;
-  margin:  auto;
+  margin: auto;
   margin-top: 5px;
   width: 150px;
   height: 2px;
   background: rgb(143, 108, 108);
   margin-bottom: 20px;
 }
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    --bs-gutter-x: 0;
-  }  
-  header {
-    position: sticky;
-    width: auto;
-    top: 0;
-    z-index: 2;
-  }
-  .logo {
-    display: flex;
-    justify-content: center;  
-    font-family: var(--josefin);  
-  }
-  .nav-logo {
-    width: 220px;
-    height: auto;
-  }
-  nav {
-    padding: 10px;
-    background:#a0dd9f; 
-    align-items: center;
-  } 
-  nav li {
-    padding-left: 20px;
-    margin-right: 10px;
-    list-style: none;
-    text-transform: uppercase;
-    font-family: var(--josefin);  
-  }
-    
-  nav li a {
-    text-decoration: none;
-    color: black; 
-    font-size: 16px; 
-
-  }
-  nav li a:hover {
-    color: white;
-  }
-  
-  /* -------------------INFO -------------- */
-  .info {
-    /* border:1px solid; */
-    background-color: #e0d1c6;
-    padding: 10px;
-  }
-  .info h1 {
-    font-family: var(--josefin);
-  }
-   .info-section {
-    display: flex;
-    padding: 10px;   
-    align-items: center;
-    justify-content: center;
-  }  
- 
-  .content-img {
-    display: flex;
-  }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  --bs-gutter-x: 0;
+}
+header {
+  position: sticky;
+  width: auto;
+  top: 0;
+  z-index: 2;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  font-family: var(--josefin);
+}
+.nav-logo {
+  width: 220px;
+  height: auto;
+}
+nav {
+  padding: 10px;
+  background: #a0dd9f;
+  align-items: center;
+}
+nav li {
+  padding-left: 20px;
+  margin-right: 10px;
+  list-style: none;
+  text-transform: uppercase;
+  font-family: var(--josefin);
+  font-size: var(--subtitles);
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+nav li a:hover {
+  color: white;
+}
+/* -------------------INFO -------------- */
+.info {
+  /* border:1px solid; */
+  background-color: #e0d1c6;
+  padding: 10px;
+}
+.info h1 {
+  font-family: var(--josefin);
+}
+.info-section {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.content-img {
+  display: flex;
+}
 .img_content {
   width: 70%;
- margin: auto;
+  margin: auto;
 }
-  .info-text h2 {
-    font-family: var(--josefin);
-  }
-  .info-text p {
-    margin: 20px;
-  }
-  .info-section figure {
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* -------------------PRODUCTS -------------- */
-  .products {
-    padding: 10px 0;
-    background-color: rgb(226, 202, 202);
-    /* border: 1px solid; */
-  }
-  .product-content_card:hover {
-    background: rgb(230, 222, 238);
-  }
- .product-content_card a {
-   text-decoration: none;
-   color: black;
+.info-text h2 {
+  font-family: var(--josefin);
+  font-size: var(--titles);
+}
+.info-text p {
+  margin: 20px;
+  font-size: var(--p-text);
+}
+.info-section figure {
+  display: flex;
+  justify-content: center;
+}
+/* -------------------PRODUCTS -------------- */
+.products {
+  padding: 10px 0;
+  background-color: rgb(226, 202, 202);
+  /* border: 1px solid; */
+}
+.products h2 {
+  font-size: var(--titles);
+}
 
-  }
-  .card-img {
-    justify-content: center;
-    background:yellow;
-    width: 90px;
-    height: 95px;      
-    border-radius: 50%;
-    margin: 10px auto;
-    background-position: center;
-    background-size: cover; 
-
-  }
-  .card-img_atrapamugre {   
-    background-image: url(/img/atrapamugre.PNG); 
-    
-  }
-  .card-img_desinfectante {
-    background-image: url(/img/tapete_desinfectante.PNG);
-
-  }
-  .card-img_publicitario {
-    background-image: url(/img/publicitario.PNG);
-
-  }
-  .card-img_luminosos {
-    background-image: url(/img/luminosos.PNG);
-
-  }
-  .card-img_tarjetas {
-    background-image: url(/img/tarjetas.PNG);
-
-  }
-  .card-img_mugs {
-    background-image: url(/img/mugs.PNG);
-
-  }
-   .products-content {
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .products-content figure {
-    display: flex;
-    justify-content: center;
-    align-content: center;     
-  }
-  .title-bold {
-    font-weight: bold;
-  }
-  .products-content figure img {
-    width: auto;
-  }  
-  .products h2 {    
-    font-family: var(--josefin);
-  }
- 
-  .product-1 {
-    margin: 20px 0;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .product-img {
-    display: flex;
-    padding: 10px;   
-    align-items: center;
-    justify-content: center;
-  }
-  .product-info {
-    padding: 10px;    
-  }
-  
-  .title-bold :hover {
-    text-shadow: 4px 4px 2px rgba(194, 135, 135, 0.6);    
-  }
-  .product-info h3 {
-     padding: 10px;
-     font-family: var(--josefin);
-  }
-  .product-1 img {
-    width: 100%;
-    height: 60%;
-  }
-  .color-info {
-    background-color: #e0d1c6;
-  }
-  .product-img figure {
-    display: flex;
-    width: 50%;
-    justify-content: center;
-  }
-  
-  /* GALERY IMAGES */
-  .galery {
-    padding: 15px;
-    background-color: rgb(224, 209, 198);
-    /* border: 1px solid; */
-  }
-  .galery-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .galery-content img {
-    width: 250px;
-  }
-  .galery h3 {
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
-    font-family: var(--josefin);
-  }
- 
-  
-
-  /* VENTAJAS */
-  .benefits {
-    background-color: rgb(226, 202, 202);
-    /* border:1px solid; */
-    padding: 20px;
-  }
-  .benefits h2 {
-    padding: 10px;
-    font-family: var(--josefin);
-  }
-  
-  .benefits-items {
-    margin: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .benefits-card {
-    width: 120px;
-  }
+.product-content_card:hover {
+  background: rgb(230, 222, 238);
+}
+.product-content_card a {
+  text-decoration: none;
+  color: black;
+}
+.card-img {
+  justify-content: center;
+  background: yellow;
+  width: 90px;
+  height: 95px;
+  border-radius: 50%;
+  margin: 10px auto;
+  background-position: center;
+  background-size: cover;
+}
+.card-img_atrapamugre {
+  background-image: url(/img/atrapamugre.PNG);
+}
+.card-img_desinfectante {
+  background-image: url(/img/tapete_desinfectante.PNG);
+}
+.card-img_publicitario {
+  background-image: url(/img/publicitario.PNG);
+}
+.card-img_luminosos {
+  background-image: url(/img/luminosos.PNG);
+}
+.card-img_tarjetas {
+  background-image: url(/img/tarjetas.PNG);
+}
+.card-img_mugs {
+  background-image: url(/img/mugs.PNG);
+}
+.products-content {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.products-content figure {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.title-bold {
+  font-weight: bold;
+}
+.products-content figure img {
+  width: auto;
+}
+.product-1 {
+  margin: 20px 0;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product-img {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.product-info {
+  padding: 10px;
+}
+.title-bold :hover {
+  text-shadow: 4px 4px 2px rgba(194, 135, 135, 0.6);
+}
+.product-info h3 {
+  padding: 10px;
+  font-family: var(--josefin);
+  font-size: var(--subtitles);
+}
+.product-1 img {
+  width: 100%;
+  height: 60%;
+}
+.color-info {
+  background-color: #e0d1c6;
+}
+.product-img figure {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+/* GALERY IMAGES */
+.galery {
+  padding: 15px;
+  background-color: rgb(224, 209, 198);
+  /* border: 1px solid; */
+}
+.galery-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.galery-content img {
+  width: 200px;
+  margin: 5px 0;
+}
+.galery h3 {
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  font-family: var(--josefin);
+  font-size: var(--titles);
+}
+/* VENTAJAS */
+.benefits {
+  background-color: rgb(226, 202, 202);
+  /* border:1px solid; */
+  padding: 20px;
+}
+.benefits h2 {
+  padding: 10px;
+  font-family: var(--josefin);
+  font-size: var(--titles);
+}
+.benefits p {
+  font-style: italic;
+}
+.benefits-items {
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.benefits-card {
+  width: 120px;
+}
 .benefits-card:hover {
   background: rgb(230, 222, 238);
 }
-  .benefits-card figure {
-    padding: 10px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-  }
-  .benefits-card p {
-    font-size: 15px;
-    text-align: center;
-  } 
-  .benefits-icon {
-    width: 50px;
-  }
-  
-  /* BOTON WHATSAPP */
-  .link-position {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 30px;
-    right: 40px;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-  }
-  .boton-position:hover {
-    text-decoration: none;
-    color: #25d366;
-    background-color: #fff;
-  }
-  .my-float {
-    margin-top: 16px;
-  }
-  
-  /* FOOTER */
-  footer {
-    font-family: var(--josefin);
-    background-color: #e0d1c6;
-    /* border: 1px solid; */
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
-  }
-  footer img {
-    align-items: center;
-  }
-  
+.benefits-card figure {
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.benefits-card p {
+  font-size: 15px;
+  text-align: center;
+}
+.benefits-icon {
+  width: 50px;
+}
+/* BOTON WHATSAPP */
+.link-position {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+.boton-position:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff;
+}
+.my-float {
+  margin-top: 16px;
+}
+/* FOOTER */
+footer {
+  font-family: var(--josefin);
+  background-color: #a0dd9f;
+  /* border: 1px solid; */
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+footer img {
+  align-items: center;
+}
